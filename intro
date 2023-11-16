@@ -1,0 +1,20 @@
+ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application.
+ng-model directive binds the value of the input field to the application variable name.
+ng-bind directive binds the content of the <p> element to the application variable name.
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p ng-bind="name"></p>
+</div>
+
+</body>
+</html>
+
+---------------------------You can use data-ng-, instead of ng-, if you want to make your page HTML valid.-----------------------------------
+
+The ng-app directive defines the application, the ng-controller directive defines the controller.
